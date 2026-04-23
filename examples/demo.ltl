@@ -1,0 +1,10 @@
+// examples/demo.ltl — runnable demo for ltl_log_lib
+
+import std::io
+use ltl_log_lib as lib
+
+fn main() {
+    io::println("ltl_log_lib demo starting...")
+    let result = lib::main() |> io::inspect()
+    io::println("demo complete")
+}
